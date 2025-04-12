@@ -107,7 +107,7 @@ export interface Project {
     {
       slug: "khetiBatiAndroid",
       title: "Kheti Bati for Android",
-      category: "App Development",
+      category: "App Developement",
       imageSrc: "/assets/khetibati_old.jpg",
       client: "Client Project",
       date: "June 2023",

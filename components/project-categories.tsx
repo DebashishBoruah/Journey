@@ -14,7 +14,7 @@ export function ProjectCategories({
   onCategoryChange, 
   activeCategory 
 }: ProjectCategoriesProps) {
-  const categories = ["All", "Branding", "Web Design", "App Developement", "UI/UX Design", "Thumbnail Design", "Photography"]
+  const categories = ["All", "Web Design", "App Developement", "UI/UX Design", "Thumbnail Design"]
 
   return (
     <div className={cn("flex flex-wrap gap-2", className)}>
