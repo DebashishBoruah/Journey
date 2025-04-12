@@ -26,18 +26,24 @@ export interface Project {
       category: "App Developement",
       imageSrc: "/assets/khetibati.jpg",
       client: "Client Project",
-      date: "June 2023",
+      date: "February 2025",
       description: "A comprehensive brand identity for an eco-friendly product company.",
-      features: [""],
-      technologies:[""],
-      images: [
-        "/placeholder.svg",
-        "/placeholder.svg",
-        "/placeholder.svg",
-        "/placeholder.svg",
+      features: [" Expert Guidance: Connect with experienced mentors across various farming sectors.",
+        "Personalized Resources: Get tailored farming advice based on your selected category.",
+        "Weather & Market Updates: Receive real-time weather forecasts and mandi (market) details.",
+        "Webinar & Plot Booking: Join informative webinars and rent plots effortlessly",
+        "Localized Services: Enjoy region-specific recommendations in Assamese or English."
       ],
-      beforeImage: "/placeholder.svg",
-      afterImage: "/placeholder.svg",
+      technologies:[
+        "Swift UI",
+        "Rest APIs",
+        "Xcode"
+      ],
+      images: [
+        "/assets/project5/p5.1.jpg",
+      ],
+      beforeImage: "",
+      afterImage: "",
       liveUrl: "",
       youtubeUrl:"",
       status:"Ongoing"
@@ -56,7 +62,6 @@ export interface Project {
       "One tap voice introduction",
     ],
       technologies:[
-      "React",
       "Next.js",
       "Tailwind CSS",
       "Framer Motion"
@@ -78,19 +83,23 @@ export interface Project {
       title: "Axom Wallet",
       category: "App Developement",
       imageSrc: "/assets/axom_wallet.jpg",
-      client: "Self Project",
+      client: "Client Project",
       date: "June 2023",
       description: "A comprehensive brand identity for an eco-friendly product company.",
-      features: [""],
-      technologies:[""],
+      features: [
+      "Supports mobile, DTH, and other types of recharges.",
+    "Introduced to overcome past limitations in fund transfer services",
+    "Designed to be simple and intuitive."
+    ],
+      technologies:[
+      "Flutter",
+      "Rest APIs"
+    ],
       images: [
-        "/placeholder.svg",
-        "/placeholder.svg",
-        "/placeholder.svg",
-        "/placeholder.svg",
+        "/assets/project6/p6.1.jpg",
       ],
-      beforeImage: "/placeholder.svg",
-      afterImage: "/placeholder.svg",
+      beforeImage: "",
+      afterImage: "",
       liveUrl: "",
       youtubeUrl:"",
       status:"Ongoing"
@@ -224,7 +233,7 @@ export interface Project {
       "Xcode"
       ],
         images: [
-          
+          "/assets/project7/p7.1.jpg"
         ],
         beforeImage: "",
         afterImage: "",
@@ -337,8 +346,8 @@ export interface Project {
         client: "Self Project",
         date: "June 2023",
         description: "A comprehensive brand identity for an eco-friendly product company.",
-        features: [""],
-        technologies:[""],
+        features: [],
+        technologies:[],
         images: [
          "/assets/mockup.png"],
         beforeImage: "",

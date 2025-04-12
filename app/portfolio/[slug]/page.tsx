@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { BeforeAfterSlider } from "@/components/before-after-slider"
 import { projects } from "@/public/data/data"
 import { notFound } from "next/navigation"
+import { cn } from "@/lib/utils"
 
 export default function ProjectPage({ params }: { params: { slug: string } }) {
   const project = projects.find(p => p.slug === params.slug)
@@ -23,6 +24,19 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
     const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
     const match = url.match(regExp);
     return (match && match[2].length === 11) ? match[2] : null;
+  }
+
+  const getStatusColor = (status: string) => {
+    switch (status) {
+      case "Completed":
+        return "bg-green-500"
+      case "Ongoing":
+        return "bg-yellow-500"
+      case "Published":
+        return "bg-blue-500"
+      default:
+        return "bg-gray-500"
+    }
   }
 
   return (
@@ -75,9 +89,24 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                         {project.date}
                       </div>
                     </div>
+                      <div className="flex items-center gap-2">
+                        <div className="font-medium">Status:</div>
+                        <div className="flex items-center gap-1">
+                          <span
+                            className={cn(
+                              "text-xs font-semibold px-2 py-1 rounded-full text-white",
+                              getStatusColor(project.status)
+                            )
+                            }
+                          >
+                            {project.status}
+                          </span>
+                        </div>
+                      </div>
                   </div>
                 </div>
-
+                
+<br />
                 {project.liveUrl && (
                   <Link href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                     <Button className="w-full">View Live Project</Button>
